@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>LaRepublica</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<style type="text/css">
 	/* reset styles */
 	html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
@@ -16,69 +17,319 @@ table { border-collapse: collapse; border-spacing: 0; }
 td, th, caption { font-weight: normal; text-align: left; }
 img, fieldset { border: 0; }
 ol { padding-left: 1.4em; list-style: decimal; }
-ul { padding-left: 1.4em; list-style:square; }
+ul { padding-left: 1.4em; list-style:none; }
 q:before, q:after { content:''; }
+
 /* end reset styles */
 
+html {
+  background-color: #EBEBEB;
+} 
 
-		
-	</style>
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 62.5%;
+
+}
+
+.icon-social-media {
+	color: white;
+}
+
+.main-banner ul {
+	position: relative;
+	left: 50%;
+}	
+
+.main-banner li {
+	display: inline;
+}
+
+
+
+.main-banner {	
+	position: relative;
+	background-color: #E00109;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.main-banner h1{
+	position: relative;
+	font-style: normal;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 6em;	
+	line-height: 15px;
+	color:#FFFFFF;
+	left:13%;
+	}
+
+
+
+.navbar {
+	position:relative;
+	background-color: #5C5C66;
+	padding: 10px;
+}
+
+.navbar ul {
+	position: relative;
+	background-color: #4E4E5A;
+	height: 40px;
+	width: 75%;
+	left: 12%;
+}
+
+.navbar li {
+	position: relative;
+	display: inline;
+	padding-left: 16px;
+	left: 12%;
+	top: 25%;
+}	
+.navbar a {
+	font-size: 1.5em;
+	color:white;
+	text-decoration: none;
+}
+
+.principal {
+		position: relative;
+		margin: 0 auto;
+  		padding: 0;
+  		background-color: #FFFFFF;
+}
+
+.main-section {
+
+	position: relative;
+	width: 75%;
+
+	
+}
+
+.article {
+	position: relative;
+	display: inline-block;
+	border: 1px solid black;
+	margin-top:5px;
+	margin-left: 5px;
+	background-color: #333340;
+	color:white;
+
+
+
+	
+}
+
+.article span {
+ 
+	text-align: left;
+	font-size: 1.85em;
+	position: absolute;
+
+}
+
+span.superior {
+	width: 155px;
+}
+
+span.inferior {
+ height: 100px;
+ bottom:0;
+ left: 0;
+}
+
+
+.article img {
+	position: relative;
+}
+
+.article ul {
+	position: absolute;
+	z-index: 200;
+	bottom:5px;
+	left: 10px;
+}
+
+.article li {
+	display: inline;
+
+}
+
+.article img#img1 {
+	width: 340px;
+	height:200px; 
+	background-image: url(assets/img/Odebrecht.jpg);
+	background-repeat: no-repeat; 
+	right:-34%;
+	bottom:0px;
+
+}
+
+.article img#img2 {
+	width: 252px;
+	height:132px;
+	background-image: url(assets/img/alejandra-aramayo.jpg);
+	background-repeat: no-repeat;
+	left:.5px;
+}
+
+.article img#img3 {
+	width: 250px;
+	height: 132px;
+	background-image: url(assets/img/corea-del-norte-.jpg);
+	background-repeat: no-repeat;
+	left:2px;
+}
+
+.principal {
+	width: 71.5%;
+	position: relative;
+	left: 40px;
+
+	}	
+
+
+.inferior {
+	position: relative;
+	width: 255px;
+	height: 255px;
+	left:40px;
+}
+
+
+.derecho {
+	position: relative;	
+	
+}
+
+.sidebar {
+	border:1px solid black;
+	width: 30%;
+	position: absolute;
+	left:62%;
+	top:0;
+}
+
+
+section.editorial {
+
+
+}
+
+
+section.editorial h2 {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: #E00109;
+	font-weight: bold;
+	padding: 10px;
+	padding-bottom: 2px;
+}
+
+section.editorial h3 {
+	background-color: #E00109;
+	color: white;
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+section.editorial img {
+	width: 53px;
+	height: 84px;
+	background-image: url(assets/img/senora.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -80px;
+	left:240px;
+}
+
+
+.secundary-news article {
+	background-color: #1363A9;
+	font-size: 1.2em;
+}
+
+
+</style>
 </head>
 <body>
-<main >		
-	<div id="banner-1">
-	<h1>La republica</h1>	
+	
+	<div class="main-banner">
+		<h1>La República</h1>	
+		<ul class="icon-social-media">
+			<li>Twuiter</li><li>Facebook</li><li>Youtube</li><li>Instagran</li>
+		</ul>
 	</div>
 		
-	<nav id="navbar">
+	<nav class="navbar">
 		<ul>
-			<li>política</li>
-			<li>economía</li>
-			<li>sociedad</li>
-			<li>mundo</li>
-			<li>deportes</li>
-			<li>espectáculos</li>
-			<li>ed.impresa</li>
-			<li>investigacion</li>
-			<li>mas</li>
+			<li><a href="#">Politica</a></li>
+			<li><a href="#">Economía</a></li>
+			<li><a href="#">Sociedad</a></li>
+			<li><a href="#">Mundo</a></li>
+			<li><a href="#">Deportes</a></li>
+			<li><a href="#">Espectáculos</a></li>
+			<li><a href="#">Ed. Impresa</a></li>
+			<li><a href="#">Investigación</a></li>
+			<li><a href="#">Mas</a></li>
 		</ul>
 	</nav>
 
-	<section class="main-section">
+	<main class="principal">
 
-		<article> 
-		<span>Los colaboradores eficaces han aumentado su relato en casa Lava Jato</span>
-		</article>
-		<article>
-			<span>Salen más casos de extorisón contra congresista fujimorista Aramayo</span>
-		</article>
-		<article>
-			<span>Corea del Norte: "La guerra termonuclear puede estallar en cualquier momento
-			</span>
-		</article>
-	</section>
-	<div class="sidebar">
-	<section class="editorial">
-		<h2>Editorial</h2>	
-		<article>
-			Libertad y extorsion 
-		</article>
-	</section>
-	<section class="secundary-news">
-		<article>
-		<span>Evalúan prisión preventiva para alcalde de Chilca y miembros de su  banda "Los rucos" </span>
-		<img src="" alt="">
-		</article>
-		<article>
-			<span>Real Madrid y Bayern Munich chocan en partidazo de Champions league</span>
-		</article>
-	</section>
-	<section class="anuncio">
-		
-	</section>
-	</div>
+		<section class="main-section">
 
-</main>	
+			<article class="article principal">
+				<span class="superior">Los <br> colaboradores eficaces han <br> documentado <br>su relato en <br>casa Lava Jato</span>
+				<img src="" alt="Edificio de la empresa Odebrecht" id="img1">
+				<ul><li>facebook</li><li>Twiter</li><li>compartir</li></ul>
+			</article>
 
+			<article class="article inferior">
+				<img src="" alt="Imagen de la congresista fujimorista Aramayo" id="img2">
+				<span class="inferior">Salen más casos de extorisón contra congresista fujimorista Aramayo</span>
+				<ul><li>facebook</li><li>Twiter</li><li>compartir</li></ul>
+			</article>
+
+			<article class="article inferior derecho">
+				<img src="" alt="Imagen del fuerte militar en Corea del Norte" id="img3">
+				<span class="inferior">Corea del Norte: "La guerra termonuclear puede estallar en cualquier momento
+				</span>
+				<ul><li>Facebook</li><li>Twiter</li><li>Compartir</li></ul>
+			</article>
+
+		</section>
+
+		<div class="sidebar">
+			<section class="editorial">
+				<h2>Editorial</h2>	
+				<h3>Libertad y extorsión</h3>
+				<img src="" alt="Imagen de Fundador del Diario la Republica Gustavo Mohme Llona">
+			</section>
+
+			<section class="secundary-news">
+				<article>
+					<span>Evalúan prisión preventiva para alcalde de Chilca y miembros de su  banda "Los rucos" </span>
+					<img src="" alt="Imagen del alcalde de Chilca llevado a prisión">
+					<ul><li>Facebok</li><li>Twiter</li><li>compatir</li></ul>
+				</article>
+
+				<article>
+					<span>Real Madrid y Bayern Munich chocan en partidazo de Champions league</span>
+					<img src="" alt="Imagen de dos jugadores del Real Madrid y Bayern Munich respectivamente">
+					<ul><li>Facebook</li><li>Twiter</li><li>compartir</li></ul>
+				</article>
+			</section>
+
+			<section class="anuncio">
+				<img src="" alt="Anuncio sobre lo mejor de comida peruana">	
+			</section>
+
+		</div>
+	</main>	
 </body>
 </html>
